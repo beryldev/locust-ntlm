@@ -8,5 +8,7 @@ RUN apk --no-cache add g++ \
 
 EXPOSE 8089 5557 5558
 
+USER 1001
+
 ENTRYPOINT ["/usr/local/bin/locust"]
 
